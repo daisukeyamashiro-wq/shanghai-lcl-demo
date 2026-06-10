@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>上海発LCL 初期診断ツール | 〇〇株式会社</title>
+    <meta name="description" content="上海発LCLのCBM、重量、貨物条件を入力し、正式見積前に確認すべきポイントを整理する〇〇株式会社向け初期診断ツールです。">
+    <link rel="stylesheet" href="lcl-check.css?v=20260609-7">
+  </head>
+  <body>
+    <header class="lcl-template-site-header">
+      <div class="lcl-template-container lcl-template-header-inner">
+        <a class="lcl-template-brand" href="index.html" aria-label="〇〇株式会社 サイトトップへ">
+          <span class="lcl-template-brand-company">〇〇株式会社</span>
+        </a>
+        <nav class="lcl-template-nav" aria-label="初期診断ツール ナビゲーション">
+          <a class="lcl-template-nav-link" href="index.html">サイトに戻る</a>
+          <a class="lcl-template-nav-cta" href="mailto:contact@example.com?subject=%E4%B8%AD%E5%9B%BD%E2%86%92%E6%97%A5%E6%9C%AC%E7%89%A9%E6%B5%81%E3%81%AE%E4%BA%8B%E5%89%8D%E7%A2%BA%E8%AA%8D%E4%BE%9D%E9%A0%BC&amp;body=%E4%BC%9A%E7%A4%BE%E5%90%8D%EF%BC%9A%0A%E3%81%94%E6%8B%85%E5%BD%93%E8%80%85%E5%90%8D%EF%BC%9A%0A%E8%B2%A8%E7%89%A9%E5%90%8D%EF%BC%9A%0A%E5%87%BA%E8%8D%B7%E5%9C%B0%EF%BC%9A%0A%E6%97%A5%E6%9C%AC%E5%81%B4%E4%BB%95%E5%90%91%E5%9C%B0%EF%BC%9A%0A%E5%B8%8C%E6%9C%9B%E8%BC%B8%E9%80%81%E5%BD%A2%E6%85%8B%EF%BC%9ALCL%20%2F%20FCL%20%2F%20%E6%9C%AA%E5%AE%9A%0A%E5%B8%8C%E6%9C%9B%E7%B4%8D%E6%9C%9F%EF%BC%9A%0A%E3%82%B5%E3%82%A4%E3%82%BA%E3%83%BB%E9%87%8D%E9%87%8F%E3%83%BBM3%EF%BC%9A%0A%E9%9B%BB%E6%B1%A0%E3%83%BB%E6%B6%B2%E4%BD%93%E3%83%BB%E7%B2%89%E6%9C%AB%E3%83%BB%E7%A3%81%E7%9F%B3%E3%83%BB%E5%8C%96%E5%AD%A6%E5%93%81%E3%81%AE%E6%9C%89%E7%84%A1%EF%BC%9A%0A%E6%B7%BB%E4%BB%98%E8%B3%87%E6%96%99%EF%BC%9AInvoice%20%2F%20Packing%20List%20%2F%20SDS%20%2F%20MSDS%20%2F%20UN38.3%20%2F%20%E5%95%86%E5%93%81%E5%86%99%E7%9C%9F%0A%E7%9B%B8%E8%AB%87%E5%86%85%E5%AE%B9%EF%BC%9A">貨物情報を送って相談する</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="lcl-template-page">
+      <section class="lcl-template-hero" aria-labelledby="lcl-template-title">
+        <div class="lcl-template-container">
+          <div class="lcl-template-hero-copy">
+            <h1 id="lcl-template-title">上海発LCL、出荷前に確認すべきポイントを30秒で整理</h1>
+            <p>
+              上海発LCLでは、貨物内容・重量・サイズ・船社/CFS条件により、通常混載で受けられない場合があります。CBM・重量・貨物条件を入力すると、正式見積前に確認すべきポイントを整理できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lcl-template-tool" aria-label="上海発LCL 初期診断フォーム">
+        <div class="lcl-template-container lcl-template-tool-grid">
+          <form class="lcl-template-card lcl-template-form" id="lcl-template-form" novalidate>
+            <div class="lcl-template-card-head">
+              <span class="lcl-template-step">01</span>
+              <div>
+                <h2>出荷条件を入力</h2>
+                <p>正式見積前の確認事項を整理します。</p>
+              </div>
+            </div>
+
+            <div class="lcl-template-field-grid">
+              <label class="lcl-template-field" for="lcl-template-cbm">
+                <span>CBM</span>
+                <input id="lcl-template-cbm" name="cbm" type="number" min="0" step="0.01" inputmode="decimal" placeholder="例：1.25" required>
+              </label>
+
+              <label class="lcl-template-field" for="lcl-template-weight">
+                <span>G/W KGS</span>
+                <input id="lcl-template-weight" name="weight" type="number" min="0" step="0.01" inputmode="decimal" placeholder="例：850" required>
+              </label>
+            </div>
+
+            <label class="lcl-template-field" for="lcl-template-destination">
+              <span>仕向地</span>
+              <select id="lcl-template-destination" name="destination" required>
+                <option value="">選択してください</option>
+                <option value="tokyo">東京</option>
+                <option value="nagoya">名古屋</option>
+                <option value="osaka">大阪</option>
+              </select>
+            </label>
+
+            <fieldset class="lcl-template-condition-group">
+              <legend>A. 貨物リスク条件</legend>
+              <p class="lcl-template-help">一般貨物と特殊条件は同時選択できません。特殊条件は複数選択できます。</p>
+              <div class="lcl-template-check-grid">
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="general" checked>
+                  <span>一般貨物</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="battery">
+                  <span>電池あり</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="liquid">
+                  <span>液体あり</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="magnet">
+                  <span>磁石あり</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="food">
+                  <span>食品あり</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="dangerous">
+                  <span>危険品の可能性あり</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="long">
+                  <span>長尺貨物</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="cargoRiskCondition" value="heavy">
+                  <span>重量物</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="lcl-template-condition-group">
+              <legend>B. 梱包状態</legend>
+              <p class="lcl-template-help">梱包状態は複数選択できます。一般貨物・特殊条件とは連動しません。</p>
+              <div class="lcl-template-check-grid">
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="packingCondition" value="carton">
+                  <span>段ボール</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="packingCondition" value="wooden">
+                  <span>木箱・木枠</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="packingCondition" value="pallet">
+                  <span>パレット積み</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="packingCondition" value="plastic">
+                  <span>プラスチックケース・カートン</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="packingCondition" value="loose">
+                  <span>バラ積み</span>
+                </label>
+                <label class="lcl-template-check">
+                  <input type="checkbox" name="packingCondition" value="other">
+                  <span>その他</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="lcl-template-field" for="lcl-template-remarks">
+              <span>備考</span>
+              <textarea id="lcl-template-remarks" name="remarks" rows="3" placeholder="貨物内容、特殊な取り扱い条件、希望納期などがあれば入力してください。"></textarea>
+            </label>
+
+            <div class="lcl-template-error" id="lcl-template-error" role="alert" hidden></div>
+
+            <button class="lcl-template-button lcl-template-button-primary" type="submit">診断する</button>
+          </form>
+
+          <section class="lcl-template-card lcl-template-result-card lcl-template-result-neutral" id="lcl-template-result" aria-live="polite">
+            <div class="lcl-template-card-head">
+              <span class="lcl-template-step">02</span>
+              <div>
+                <h2>診断結果</h2>
+                <p>入力後、ここに確認事項を表示します。</p>
+              </div>
+            </div>
+
+            <div class="lcl-template-empty" id="lcl-template-empty">
+              <p>CBM、重量、仕向地、貨物リスク条件を入力して「診断する」を押してください。</p>
+            </div>
+
+            <div class="lcl-template-result-body" id="lcl-template-result-body" hidden>
+              <div class="lcl-template-status-grid" aria-label="診断ステータス概要">
+                <div>
+                  <span>リスクレベル</span>
+                  <strong id="lcl-template-risk-level">-</strong>
+                </div>
+                <div>
+                  <span>日本側費用目安</span>
+                  <strong id="lcl-template-japan-cost">-</strong>
+                </div>
+                <div>
+                  <span>診断ステータス</span>
+                  <strong id="lcl-template-diagnosis-status">-</strong>
+                </div>
+              </div>
+
+              <div class="lcl-template-summary-grid">
+                <div>
+                  <span>仕向地</span>
+                  <strong id="lcl-template-result-destination">-</strong>
+                </div>
+                <div>
+                  <span>入力CBM</span>
+                  <strong id="lcl-template-result-cbm">-</strong>
+                </div>
+                <div>
+                  <span>入力重量</span>
+                  <strong id="lcl-template-result-weight">-</strong>
+                </div>
+                <div>
+                  <span>課金RT目安</span>
+                  <strong id="lcl-template-result-rt">-</strong>
+                </div>
+              </div>
+
+              <p class="lcl-template-rt-note">課金RTは目安です。実際の課金基準は船社・CFS・貨物形状・重量条件により異なります。</p>
+
+              <div class="lcl-template-estimate-box" id="lcl-template-japan-cost-box">
+                <h3>日本側費用目安</h3>
+                <p class="lcl-template-estimate-main" id="lcl-template-japan-cost-main">-</p>
+                <p class="lcl-template-estimate-note" id="lcl-template-japan-cost-note">-</p>
+              </div>
+
+              <div class="lcl-template-result-section">
+                <h3>初期診断結果</h3>
+                <ul class="lcl-template-result-list" id="lcl-template-diagnosis-list"></ul>
+              </div>
+
+              <div class="lcl-template-result-section">
+                <h3>仕向地別確認ポイント</h3>
+                <ul class="lcl-template-required-list" id="lcl-template-destination-note"></ul>
+              </div>
+
+              <div class="lcl-template-result-section">
+                <h3>正式見積に必要な情報</h3>
+                <ul class="lcl-template-required-list" id="lcl-template-required-list"></ul>
+              </div>
+
+              <div class="lcl-template-result-section">
+                <h3>注意事項</h3>
+                <ul class="lcl-template-caution-list" id="lcl-template-caution-list"></ul>
+              </div>
+
+              <a class="lcl-template-button lcl-template-button-mail" id="lcl-template-mail-button" href="#" aria-disabled="true">正式見積を依頼する</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="lcl-template-footer">
+      <div class="lcl-template-container lcl-template-footer-inner">
+        <div>
+          <p class="lcl-template-footer-brand">〇〇株式会社</p>
+          <p>中国→日本物流 事前確認・LCL混載輸送</p>
+        </div>
+        <div class="lcl-template-footer-links">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="#lcl-template-title">ページ上部へ</a>
+        </div>
+      </div>
+      <p class="lcl-template-copyright">© 〇〇株式会社 All Rights Reserved.</p>
+    </footer>
+
+    <script src="lcl-check.js?v=20260609-6"></script>
+  </body>
+</html>
