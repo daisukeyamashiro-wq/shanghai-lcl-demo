@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daisukeyamashiro-wq.github.io/shanghai-lcl-demo/sitemap.xml
