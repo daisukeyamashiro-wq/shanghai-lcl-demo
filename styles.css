@@ -202,12 +202,12 @@ input {
 }
 
 .hero-grid {
-  min-height: 560px;
+  min-height: 520px;
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.86fr);
+  grid-template-columns: minmax(0, 1.14fr) minmax(390px, 0.86fr);
   align-items: center;
-  gap: 46px;
-  padding: 34px 0 18px;
+  gap: 32px;
+  padding: 58px 0 52px;
 }
 
 .hero-label,
@@ -252,6 +252,13 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero h1 {
+  max-width: 720px;
+  margin-bottom: 16px;
+  font-size: clamp(52px, 4.8vw, 66px);
+  line-height: 1.08;
+}
+
 h2 {
   margin-bottom: 16px;
   color: var(--navy);
@@ -268,9 +275,10 @@ h3 {
 }
 
 .hero-text {
-  max-width: 690px;
+  max-width: 650px;
   color: #334b63;
   font-size: 16px;
+  line-height: 1.75;
 }
 
 .hero-note {
@@ -290,13 +298,14 @@ h3 {
 .hero-actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: min(100%, 560px);
+  width: min(100%, 540px);
   align-items: stretch;
+  gap: 10px;
 }
 
 .hero-actions .button {
   width: 100%;
-  min-height: 54px;
+  min-height: 52px;
 }
 
 .button {
@@ -446,7 +455,7 @@ h3 {
 
 .diagnostic-panel {
   position: relative;
-  padding: 20px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -468,7 +477,7 @@ h3 {
   align-items: flex-end;
   justify-content: space-between;
   gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .panel-top h2 {
@@ -512,7 +521,7 @@ h3 {
 
 .dashboard-list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 @media (min-width: 1061px) {
@@ -521,21 +530,24 @@ h3 {
   }
 
   .dashboard-list article {
-    grid-template-columns: 36px minmax(0, 1fr);
+    grid-template-columns: 34px minmax(0, 1fr);
     align-items: start;
   }
 
   .dashboard-list strong {
-    grid-column: 2;
+    position: absolute;
+    top: 9px;
+    right: 9px;
   }
 }
 
 .dashboard-list article {
+  position: relative;
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr) auto;
+  grid-template-columns: 38px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 12px;
-  padding: 11px;
+  gap: 10px;
+  padding: 9px 42px 9px 9px;
   background: var(--white);
   border: 1px solid #e3edf4;
   border-radius: 7px;
@@ -549,8 +561,8 @@ h3 {
 .dashboard-list p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.42;
 }
 
 .dashboard-list strong {
@@ -559,8 +571,8 @@ h3 {
 }
 
 .dash-icon {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   display: grid;
   place-items: center;
   color: var(--blue);
@@ -571,14 +583,14 @@ h3 {
 }
 
 .panel-foot {
-  margin: 14px 0 0;
-  padding: 10px 12px;
+  margin: 10px 0 0;
+  padding: 8px 10px;
   color: #294761;
   background: #edf7fd;
   border: 1px solid #c8e4f4;
   border-radius: 7px;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 .visual-brief {
@@ -736,17 +748,41 @@ h3 {
 .split-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1fr);
-  gap: 52px;
+  gap: 40px;
   align-items: start;
 }
 
+#checks.section {
+  padding: 72px 0;
+}
+
+#checks .split-layout > div:first-child {
+  max-width: 500px;
+}
+
+#checks h2 {
+  margin-bottom: 14px;
+  font-size: clamp(30px, 3.45vw, 43px);
+  line-height: 1.22;
+}
+
+#checks .split-layout > div:first-child p:not(.section-label) {
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+#checks .button {
+  min-width: min(100%, 310px);
+}
+
 .check-panel {
-  padding: 24px;
+  align-self: start;
+  padding: 30px 24px 28px;
 }
 
 .check-list {
   display: grid;
-  gap: 12px;
+  gap: 11px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -756,6 +792,7 @@ h3 {
 .cargo-card li {
   position: relative;
   padding-left: 26px;
+  line-height: 1.68;
 }
 
 .check-list li::before,
@@ -1468,6 +1505,11 @@ h3 {
     font-size: clamp(31px, 9vw, 41px);
   }
 
+  .hero h1 {
+    font-size: clamp(39px, 10.5vw, 45px);
+    line-height: 1.1;
+  }
+
   .hero-text {
     font-size: 15px;
   }
@@ -1520,7 +1562,9 @@ h3 {
   }
 
   .dashboard-list strong {
-    grid-column: 2;
+    position: absolute;
+    top: 9px;
+    right: 9px;
   }
 
   .case-list article {
